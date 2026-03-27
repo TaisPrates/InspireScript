@@ -53,10 +53,11 @@ Usuário → Interface → API → Banco de Dados
 ## 🛠 Tecnologias
 
 * Python  
-* Flask  
+* FastAPI 
 * MySQL / SQL  
 * HTML  
-* CSS  
+* CSS
+* JavaScript
 * Git / GitHub  
 
 ---
