@@ -4,138 +4,120 @@
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)  
 ![Linguagens](https://img.shields.io/badge/Linguagens-HTML%20|%20CSS%20|%20Python%20|%20SQL-blue)
 
-## 📖 Sobre o Projeto
+---
 
-O **InspireScript** é um caderno digital criado para registrar ideias literárias, como inspirações, sinopses, fichas de personagens e ambientações.
+## 📖 Visão Geral
 
-Além de ser uma ferramenta criativa, o projeto funciona como um **laboratório de aprendizado**, onde pratico desenvolvimento **back-end, desenvolvimento web e banco de dados**, aplicando conceitos de **Python, Flask, SQL, HTML e CSS**.
+O **InspireScript** é uma aplicação web projetada para auxiliar escritores na organização, estruturação e evolução de ideias criativas.
 
-A proposta do projeto é evoluir gradualmente enquanto estudo novas tecnologias, com o objetivo de futuramente transformá-lo em uma **plataforma completa para escritores organizarem e desenvolverem suas histórias**.
+A plataforma permite registrar e gerenciar elementos fundamentais de uma narrativa, como:
+
+* Ideias e inspirações  
+* Personagens  
+* Ambientações  
+* Estruturas narrativas  
+
+O projeto está sendo desenvolvido com foco em **arquitetura escalável**, separação de responsabilidades e integração entre back-end, banco de dados e interface web.
 
 ---
 
-## 🚀 Objetivos
+## 🎯 Objetivo do Projeto
 
-- Organizar ideias literárias em formato digital  
-- Praticar desenvolvimento **back-end com Python e Flask**  
-- Criar e gerenciar um **banco de dados com MySQL**  
-- Integrar **front-end e back-end através de uma API**  
-- Evoluir o projeto gradualmente até se tornar uma **plataforma completa de escrita**
+Construir uma plataforma completa que permita:
+
+* Centralizar o processo criativo de escrita  
+* Estruturar ideias de forma organizada  
+* Evoluir conceitos narrativos ao longo do tempo  
+* Servir como base para futuras extensões inteligentes (IA aplicada à escrita)  
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🧩 Arquitetura
 
-- **Python**
-- **Flask**
-- **SQL / MySQL**
-- **HTML**
-- **CSS**
-- **Git**
-- **GitHub**
+O projeto segue uma arquitetura baseada em três camadas principais:
+
+* **Front-end:** Interface de interação com o usuário  
+* **Back-end (Flask):** Camada de aplicação e regras de negócio  
+* **Banco de dados (MySQL):** Persistência e organização das informações  
+
+### Fluxo da aplicação
+
+Usuário → Interface → API (Flask) → Banco de Dados
+
+---
+
+## 🛠 Tecnologias
+
+* Python  
+* Flask  
+* SQL  
+* HTML  
+* CSS  
+* Git / GitHub  
 
 ---
 
 ## 📂 Estrutura do Projeto
 
-```
+```bash
 InspireScript/
 │
-├─ front/ # Interface da aplicação
-│ ├─ templates/ # Páginas HTML utilizadas pelo Flask
-│ └─ static/
-│ ├─ css/ # Estilos CSS
-│ ├─ js/ # Scripts JavaScript (futuro)
-│ └─ img/ # Imagens
-│
-├─ back/ # Backend da aplicação
-│ ├─ app.py # Aplicação principal Flask
-│ ├─ routes/ # Rotas da aplicação
-│ ├─ models/ # Estrutura de dados e acesso ao banco
-│ └─ services/ # Regras de negócio
-│
-├─ database/ # Banco de dados
-│ ├─ schema.sql # Criação das tabelas
-│ ├─ seed.sql # Dados de exemplo
-│ └─ queries.sql # Consultas SQL
-│
-├─ docs/ # Documentação do projeto
-│ └─ requisitos.md
-│
+├─ front/              # Interface da aplicação
+├─ back/               # Lógica e API (Flask)
+├─ database/           # Modelagem e scripts SQL
+├─ docs/               # Documentação técnica
 └─ README.md
 ```
 
----
+## 🚀 Roadmap (alto nível)
 
-## 🧠 Arquitetura do Projeto
+O desenvolvimento do projeto segue etapas evolutivas:
 
-O projeto segue uma arquitetura simples de aplicação web:
+1. Estrutura base da aplicação  
+2. Modelagem do banco de dados  
+3. Implementação do backend (CRUD e API)  
+4. Construção da interface  
+5. Integração entre camadas  
+6. Expansão com recursos inteligentes (IA)  
 
-- **Front-end:** interface onde o usuário interage com o sistema  
-- **Back-end (Flask):** responsável pela lógica da aplicação e comunicação com o banco  
-- **Banco de Dados (MySQL):** armazenamento das informações do sistema  
-
-### Fluxo básico da aplicação
-
-```
-Usuário
-↓
-Interface (HTML + CSS)
-↓
-API Flask (Python)
-↓
-Banco de Dados (MySQL)
-```
+Detalhamento disponível em: `docs/roadmap.md`
 
 ---
 
-## 📌 Funcionalidades Planejadas
+## 📌 Funcionalidades previstas
 
-- Cadastro de ideias literárias  
-- Fichas de personagens  
-- Organização de ambientações  
-- Visualização e edição das informações  
-- Sistema de busca por ideias  
-- Evolução futura para uma plataforma completa de escrita
-
----
-
-## 📈 Checklist de Progresso
-
-### Banco de Dados
-
-- [x] Criar banco de dados inicial  
-- [x] Definir tabelas (ideias, personagens, ambientes)  
-- [x] Criar relacionamentos entre tabelas  
-- [x] Inserir dados de teste  
-
-### Backend (Flask)
-
-- [ ] Criar estrutura inicial da aplicação  
-- [ ] Conectar aplicação ao MySQL  
-- [ ] Criar CRUD para gerenciamento das ideias  
-- [ ] Criar rotas da API  
-
-### Frontend
-
-- [ ] Criar página inicial  
-- [ ] Criar formulário para adicionar ideias  
-- [ ] Estilizar páginas com CSS  
-- [ ] Criar interface de organização das ideias  
-
-### Organização do Projeto
-
-- [x] Estruturar pastas do projeto  
-- [ ] Documentar desenvolvimento na pasta `docs/`  
-- [ ] Evoluir arquitetura da aplicação  
+* Cadastro e gerenciamento de ideias  
+* Organização de personagens  
+* Estruturação de ambientações  
+* Edição e visualização de conteúdo  
+* Sistema de busca  
+* Extensões com suporte a IA  
 
 ---
 
-## 💡 Sobre este projeto
+## 📚 Documentação
 
-O **InspiraScript** faz parte da minha jornada de aprendizado em **desenvolvimento back-end com Python**, explorando conceitos como:
+A documentação completa do projeto está disponível na pasta `docs/`:
 
-- estrutura de aplicações web  
-- integração entre front-end e back-end  
-- modelagem de banco de dados  
-- organização de projetos reais  
+* Arquitetura do sistema  
+* Guia de execução local  
+* Planejamento de desenvolvimento  
+* Decisões técnicas  
+
+---
+
+## 🤖 Expansões futuras
+
+O projeto está sendo estruturado para permitir a integração com recursos de IA generativa, incluindo:
+
+* Assistência na criação de conteúdo  
+* Sugestões narrativas  
+* Apoio ao desenvolvimento de personagens  
+
+Esses recursos serão implementados de forma modular, sem comprometer a arquitetura principal da aplicação.
+
+---
+
+## 📌 Observação
+
+Este projeto é desenvolvido de forma incremental, com foco em boas práticas de engenharia de software, organização de código e evolução arquitetural.
