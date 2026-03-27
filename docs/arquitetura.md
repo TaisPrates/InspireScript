@@ -1,5 +1,7 @@
 # 🧩 Arquitetura
 
+## 📌 Visão geral
+
 O InspireScript é estruturado como uma aplicação web com separação entre interface, camada de aplicação e persistência de dados.
 
 A arquitetura segue um modelo em camadas, permitindo organização, escalabilidade e facilidade de manutenção.
@@ -9,23 +11,23 @@ A arquitetura segue um modelo em camadas, permitindo organização, escalabilida
 ## 🧱 Componentes
 
 ### Front-end
-Responsável pela interface com o usuário.
+Responsável pela interação com o usuário.
 
 - HTML
 - CSS
-- JavaScript (para interatividade)
+- JavaScript (interatividade)
 
 ---
 
 ### Back-end
-Responsável pelas regras de negócio e comunicação com o banco de dados.
+Responsável pelas regras de negócio e exposição da API.
 
 - Python
 - FastAPI
 
 ---
 
-### Banco de Dados
+### Banco de dados
 Responsável pela persistência das informações.
 
 - MySQL (atual)
@@ -35,10 +37,14 @@ Responsável pela persistência das informações.
 
 ## 🔄 Fluxo da aplicação
 
-Usuário → Interface → API (FastAPI) → Banco de Dados
-
----
-
-## 📌 Observação
-
-A arquitetura foi definida de forma modular, permitindo evolução gradual das tecnologias utilizadas sem comprometer a estrutura principal do sistema.
+```mermaid
+flowchart TD
+    A[Usuario] --> B[Front-end]
+    B --> C[Interface HTML e CSS]
+    B --> D[Interacoes JavaScript]
+    D --> E[API FastAPI]
+    E --> F[Rotas]
+    E --> G[Regras de negocio]
+    E --> H[Validacao de dados]
+    G --> I[Persistencia]
+    I --> J[Banco de dados MySQL]
