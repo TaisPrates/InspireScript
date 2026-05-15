@@ -1,0 +1,97 @@
+# generated: 2026-05-15
+# last_updated: 2026-05-15T17:00:00
+# project: InspireScript
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: "2026-05-15"
+last_updated: "2026-05-15T17:00:00"
+project: InspireScript
+project_key: NOKEY
+tracking_system: file-system
+story_location: "_bmad-output/implementation-artifacts"
+
+development_status:
+  epic-1: in-progress
+  1-1-configuracao-por-variaveis-de-ambiente: ready-for-dev
+  1-2-unificar-pacote-python-back-core: backlog
+  1-3-padrao-global-de-erros-e-cors-na-api: backlog
+  1-4-dependencias-e-requirements-alinhados: backlog
+  1-5-scaffold-da-api-v1-com-routers-montados: backlog
+  epic-1-retrospective: optional
+
+  epic-2: backlog
+  2-1-repositorio-de-ideias-retorna-dados-estruturados: backlog
+  2-2-servico-de-ideias-com-regras-de-negocio: backlog
+  2-3-api-rest-crud-de-ideias: backlog
+  2-4-detalhe-agregado-da-ideia-completo: backlog
+  2-5-historico-automatico-ao-editar-descricao: backlog
+  2-6-interface-web-ideias-listar-criar-editar-buscar: backlog
+  epic-2-retrospective: optional
+
+  epic-3: backlog
+  3-1-repositorios-de-genero-e-subgenero-retornam-dados: backlog
+  3-2-servico-e-api-de-generos-e-subgeneros: backlog
+  3-3-vinculo-ideia-subgenero-na-api: backlog
+  3-4-interface-web-generos-e-subgeneros: backlog
+  epic-3-retrospective: optional
+
+  epic-4: backlog
+  4-1-repositorios-personagem-papel-e-elenco: backlog
+  4-2-servico-e-api-de-personagens-e-papeis: backlog
+  4-3-api-de-elenco-por-ideia: backlog
+  4-4-interface-web-personagens-e-elenco: backlog
+  epic-4-retrospective: optional
+
+  epic-5: backlog
+  5-1-repositorios-de-cenario-e-vinculo: backlog
+  5-2-servico-e-api-de-cenarios: backlog
+  5-3-interface-web-cenarios: backlog
+  epic-5-retrospective: optional
+
+  epic-6: backlog
+  6-1-repositorio-e-servico-de-logs: backlog
+  6-2-api-e-ui-de-historico: backlog
+  epic-6-retrospective: optional
+
+  epic-7: backlog
+  7-1-cli-usa-camada-de-servicos: backlog
+  7-2-corrigir-vinculo-de-subgenero-no-menu: backlog
+  7-3-cli-para-cenarios-e-logs: backlog
+  epic-7-retrospective: optional
+
+  epic-8: backlog
+  8-1-testes-de-integracao-da-api-smoke: backlog
+  8-2-atualizar-documentacao-tecnica: backlog
+  8-3-verificacao-de-performance-local: backlog
+  epic-8-retrospective: optional

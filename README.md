@@ -41,8 +41,8 @@ Construir uma plataforma que permita:
 A aplicação segue uma estrutura em três camadas principais:
 
 * **Front-end:** Interface de interação com o usuário  
-* **Back-end (Flask):** Regras de negócio e API  
-* **Banco de dados (MySQL):** Persistência das informações  
+* **Back-end (FastAPI):** Regras de negócio e API  
+* **Banco de dados (PostgreSQL):** Persistência das informações  
 
 ### Fluxo da aplicação
 
@@ -54,7 +54,7 @@ Usuário → Interface → API → Banco de Dados
 
 * Python  
 * FastAPI 
-* MySQL / SQL  
+* PostgreSQL / SQL  
 * HTML  
 * CSS
 * JavaScript

@@ -1,0 +1,60 @@
+{
+  "workflow_version": "1.2.0",
+  "timestamps": {
+    "started": "2026-05-15T16:30:00-03:00",
+    "last_updated": "2026-05-15T16:45:00-03:00",
+    "completed": "2026-05-15T16:45:00-03:00"
+  },
+  "mode": "initial_scan",
+  "scan_level": "deep",
+  "project_root": "c:\\Inspire_Script",
+  "project_knowledge": "docs",
+  "completed_steps": [
+    {"step": "step_1", "status": "completed", "timestamp": "2026-05-15T16:32:00-03:00", "summary": "Classificado como monólito backend (1 parte)"},
+    {"step": "step_2", "status": "completed", "timestamp": "2026-05-15T16:33:00-03:00", "summary": "Encontrados 4 docs existentes (visao-geral, arquitetura, setup vazio, roadmap vazio)"},
+    {"step": "step_3", "status": "completed", "timestamp": "2026-05-15T16:34:00-03:00", "summary": "Tech stack: Python + FastAPI + PostgreSQL + psycopg2"},
+    {"step": "step_4", "status": "completed", "timestamp": "2026-05-15T16:38:00-03:00", "summary": "API: 3 endpoints; Data: 10 tabelas documentadas"},
+    {"step": "step_5", "status": "completed", "timestamp": "2026-05-15T16:39:00-03:00", "summary": "Árvore de diretórios documentada"},
+    {"step": "step_6", "status": "completed", "timestamp": "2026-05-15T16:40:00-03:00", "summary": "Guia de desenvolvimento escrito"},
+    {"step": "step_8", "status": "completed", "timestamp": "2026-05-15T16:42:00-03:00", "summary": "Arquitetura documentada"},
+    {"step": "step_9", "status": "completed", "timestamp": "2026-05-15T16:43:00-03:00", "summary": "Docs de suporte gerados"},
+    {"step": "step_10", "status": "completed", "timestamp": "2026-05-15T16:44:00-03:00", "summary": "index.md gerado"},
+    {"step": "step_11", "status": "completed", "timestamp": "2026-05-15T16:44:30-03:00", "summary": "Validação concluída"},
+    {"step": "step_12", "status": "completed", "timestamp": "2026-05-15T16:45:00-03:00", "summary": "Workflow completo"}
+  ],
+  "current_step": "completed",
+  "findings": {
+    "project_classification": {
+      "repository_type": "monolith",
+      "parts_count": 1,
+      "primary_tech": "Python/FastAPI/PostgreSQL"
+    },
+    "project_types": [
+      {"part_id": "backend", "project_type_id": "backend", "display_name": "Backend API + CLI"}
+    ],
+    "technology_stack": {
+      "backend": "FastAPI 0.135, uvicorn, psycopg2, PostgreSQL"
+    },
+    "gaps": [
+      "Front-end ausente",
+      "API mínima vs CLI completo",
+      "README cita MySQL; código usa PostgreSQL",
+      "psycopg2 ausente em requirements.txt",
+      "Credenciais hardcoded em config_banco.py",
+      "Bug menu: vincular_subgenero_ideia inexistente"
+    ]
+  },
+  "outputs_generated": [
+    "project-scan-report.json",
+    "index.md",
+    "project-overview.md",
+    "source-tree-analysis.md",
+    "architecture.md",
+    "api-contracts.md",
+    "data-models.md",
+    "development-guide.md",
+    "component-inventory.md",
+    "project-parts.json"
+  ],
+  "resume_instructions": "Workflow concluído"
+}
